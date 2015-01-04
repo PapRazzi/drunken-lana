@@ -142,7 +142,6 @@
                     {/literal}
                     <div class="menu-holder">
                         <div class="holder">
-                            <div class="menu-r"></div>
                             <div class="menu-c wide">
                                 <p class="welcome">{$lang26} <a href="{$baseurl}/{insert name=get_seo_profile value=a username=$smarty.session.USERNAME|stripslashes}">{$smarty.session.USERNAME|stripslashes}</a> - <a href="javascript:loadContent('#loadme', '{$baseurl}/log_out');">{$lang27}</a></p>
                                 <div id="scriptolutiontopmenu" class="topmenu">
@@ -180,14 +179,12 @@
                                     <br style="clear: left" />
                                 </div>
                             </div>			
-                            <div class="menu-l"></div>
                         </div>
 					</div>              
 					{else}
                     <div class="menu-holder">
                         <div class="abs"></div> 
                         <div class="holder">
-                            <div class="menu-r" ></div>
                             <div class="menu-c guest">
                                 <div id="scriptolutiontopmenu" class="topmenu">
                                     <ul>                    
@@ -232,7 +229,6 @@
                                     <br class="cl" />
                                 </div>
                             </div>
-                            <div class="menu-l"></div>
                         </div>
                     </div>
                     {/if}

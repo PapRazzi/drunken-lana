@@ -33,12 +33,12 @@ $('.helpbox.blue p b').corner('5px');
       });
 	toggleSmallSearchBoxHint();
 function toggleSmallSearchBoxHint(){
-	if( $('.swap-value-small-search').val() == '' ){
-		$('.swap-value-small-search').css("background","#fff url(" + base_url +"/images/bg-small-search-box-idle.gif) repeat-x");
-	}
-	else{
-		$('.swap-value-small-search').css('background','#fff url(' + base_url +'/images/bg-input02.gif) repeat-x');		
-	}	
+	//if( $('.swap-value-small-search').val() == '' ){
+	//	$('.swap-value-small-search').css("background","#fff url(" + base_url +"/images/bg-small-search-box-idle.gif) repeat-x");
+	//}
+	//else{
+	//	$('.swap-value-small-search').css('background','#fff url(' + base_url +'/images/bg-input02.gif) repeat-x');
+	//}
 } 
 $('.swap-value-small-search').focus(function(){
 	$('.swap-value-small-search').css('background','#fff')

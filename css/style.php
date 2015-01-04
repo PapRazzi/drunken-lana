@@ -130,7 +130,7 @@ border-bottom: 1px solid #D4DCDE!important;
 margin: 0 0 10px;
 }
 .index table {
-font-family: Arial;
+font-family: "Segoe UI", Arial, sans-serif;
 border-collapse: collapse;
 }
 .index thead.icons td.amount {
@@ -516,7 +516,7 @@ margin: 0 0 5px;
 }
 .page-title h2 span, b.balance {
 display: block;
-font-family: Arial!important;
+font-family: "Segoe UI", Arial, sans-serif!important;
 font-weight: normal!important;
 font-size: 12px!important;
 line-height: 16px;
@@ -936,7 +936,7 @@ margin: 0 0 5px;
 textarea#rating_comment {
 width: 545px;
 color: #777;
-font-family: Arial;
+font-family: "Segoe UI", Arial, sans-serif;
 margin: 5px 0 0;
 padding: 5px;
 }
@@ -1009,7 +1009,7 @@ width: 565px;
 .respond textarea {
 background: #fff!important;
 border: 1px solid #ccdadf;
-font-family: Arial;
+font-family: "Segoe UI", Arial, sans-serif;
 font-size: 20px;
 color: #444;
 width: 532px;
@@ -1330,7 +1330,7 @@ color: #555;
 }
 .uploadifyQueueItem span.fileName {
 font-weight: bold!important;
-font-family: Arial!important;
+font-family: "Segoe UI", Arial, sans-serif!important;
 }
 .uploadifyQueueItem.uploadifyError {
 background: none!important;
@@ -2818,11 +2818,11 @@ margin: 0!important;
 * {
 font-size: 100.01%}
 html {
-font: 62.5%/1.4 arial, helvetica, sans-serif;
+font: 62.5%/1.4 "Segoe UI", Arial, Helvetica, sans-serif;
 height: 100%}
 body {
 margin: 0;
-font: 1.2em Helvetica, Arial, sans-serif;
+font: 1.2em "Segoe UI", Arial, Helvetica, sans-serif;
 height: 100%;
 color: #4b4b4b;
 min-width: 800px;
@@ -2841,6 +2841,7 @@ width: 860px;
 height: 1%;
 float: right;
 top: 0;
+margin-right: 20px;
 }
 .inner #header .menu-holder .holder .menu-r {
 background: url(<?php echo $imageurl;
@@ -2851,11 +2852,13 @@ float: right;
 }
 .inner #header .menu-holder .holder .menu-c {
 float: right;
-background: #232323;
-height: 36px;
+background: #034188;
+height: 50px;
+margin-bottom: -14px;
 }
 .inner #header .menu-holder .holder .guest {
-width: 600px;
+width: 614px;
+border-radius: 0 0 6px 6px;
 }
 .inner #header .menu-holder .holder .menu-l {
 background: url(<?php echo $imageurl;
@@ -2901,7 +2904,7 @@ display: block;
 overflow: hidden;
 text-indent: -9999px;
 outline: none;
-font: 0px/0px Arial, Helvetica, sans-serif;
+font: 0px/0px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .btn-edit {
 width: 84px;
@@ -3044,10 +3047,9 @@ background: url(<?php echo $imageurl;
 .main-content {
 display: table-cell;
 width: 100%;
-/* padding: 0 30px 0 30px;
 background: url(<?php echo $imageurl;
 ?>/bg-header.png) top no-repeat #fff;
-*/}
+}
 #header {
 height: 1%}
 .logo {
@@ -3062,9 +3064,13 @@ text-indent: -9999px;
 display: block;
 height: 100%}
 .logo-placer {
-position: relative;
-left: 10px;
-top: 13px;
+margin-left: 20px;
+margin-top: 6px;
+}
+.logo-placer::after {
+display: block;
+content: ' ';
+clear: both;
 }
 #main {
 width: 932px;
@@ -3160,18 +3166,18 @@ margin: 48px 0 0 110px;
 .five-dollars {
 float: right;
 color: #e1e1e1;
-font: 2.9166em Arial, Helvetica, sans-serif;
+font: 2.9166em "Segoe UI", Arial, Helvetica, sans-serif;
 margin-left: 1px;
 }
 .five-dollars a {
 float: right;
 color: #e1e1e1;
-font: 0.5em Arial, Helvetica, sans-serif;
+font: 0.5em "Segoe UI", Arial, Helvetica, sans-serif;
 margin-left: 1px;
 }
 .promotion .box h2 {
 margin: 0;
-font: bold 18px Helvetica, Arial, sans-serif;
+font: bold 18px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .promotion .box h2 a, .featured h2 a {
 color: #08708e;
@@ -3183,7 +3189,7 @@ letter-spacing: -0.01em;
 }
 .featured h2 {
 margin: -2px 0 3px;
-font: bold 1.8100em/.75em arial, helvetica, sans-serif;
+font: bold 1.8100em/.75em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .promotion .box:hover h2 a, .promotion .box.hover h2 a, .featured .box:hover h2 a, .featured .box.hover h2 a {
 color: #0095c0;
@@ -3242,10 +3248,10 @@ margin: 2px 0 0;
 margin: 0 0 3px;
 color: #555555;
 margin-top: 4px;
-font: 1.1em arial, helvetica, sans-serif;
+font: 1.1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .box p span {
-font: .9em arial, helvetica, sans-serif;
+font: .9em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .box p span, .box p span a {
 color: #999999;
@@ -3255,7 +3261,7 @@ color: #0095c0;
 text-decoration: underline;
 }
 .featured .five-dollars {
-font: 2.5833em/1em Arial, Helvetica, sans-serif;
+font: 2.5833em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #f3f3f3;
 margin-top: 5px;
 }
@@ -3290,7 +3296,7 @@ float: left;
 color: #0095c6;
 text-decoration: none;
 vertical-align: top;
-font: .834em/1.6em Helvetica, Arial, sans-serif;
+font: .834em/1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 ul.control span, ul.control em {
 float: left;
@@ -3317,7 +3323,7 @@ cursor: default;
 float: left;
 color: #6f6f6f;
 vertical-align: top;
-font: .834em/1.6em Helvetica, Arial, sans-serif;
+font: .834em/1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 ul.control .like span {
 background: url(<?php echo $imageurl;
@@ -3360,7 +3366,7 @@ background-position: 0 -16px;
 }
 .est-delivery {
 height: 16px;
-font: .834em/1.6em Helvetica, Arial, sans-serif;
+font: .834em/1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #6f6f6f;
 background: url(<?php echo $imageurl;
 ?>/ico-clock.png) no-repeat;
@@ -3404,7 +3410,7 @@ margin-right: 20px;
 ul.top-nav li {
 padding: 4px 7px 0 7px;
 float: left;
-font-family: Arial, Helvetica, sans-serif;
+font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 font-size: 1.334em;
 line-height: 1.6em;
 }
@@ -3479,7 +3485,7 @@ list-style: none;
 ul.service li {
 float: left;
 padding: 0 15px 0 0;
-font: 1.167em Arial, Helvetica, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 ul.service a {
 color: #3E3E3E;
@@ -3490,11 +3496,11 @@ color: #fff;
 text-decoration: none;
 }
 .inner .logo {
-float: right;
 background: url(<?php echo $imageurl;
 ?>/logo.png) no-repeat;
-width: 280px;
+width: 180px;
 height: 85px;
+background-size: contain;
 }
 .inner #main {
 width: 818px;
@@ -3540,7 +3546,7 @@ margin: 0;
 padding: 4px 10px 7px;
 height: 24px;
 color: #595959;
-font: 20px Helvetica, Arial, sans-serif;
+font: 20px "Segoe UI", Arial, Helvetica, sans-serif;
 border: 1px solid #c6c6d4;
 background: #fff url(<?php echo $imageurl;
 ?>/bg-input02.gif) repeat-x;
@@ -3555,7 +3561,7 @@ padding: 0;
 padding: 0;
 margin: 0 0 0 54px;
 color: #777;
-font: normal 1.0em Arial, Helvetica, sans-serif;
+font: normal 1.0em "Segoe UI", Arial, Helvetica, sans-serif;
 /*color: #fff;
 background: #232323;
 width: 190px;
@@ -3563,14 +3569,14 @@ margin: 0 0 -5px 53px;
 padding: 5px 0 3px 10px;
 */}
 .iwill p span {
-font: normal .8em Arial, Helvetica, sans-serif;
+font: normal .8em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #777;
 }
 .iwill-holder {
 position: relative;
 padding: 0;
 margin: 5px 0 0 10px;
-font: normal 1.6em Arial, Helvetica, sans-serif;
+font: normal 1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #777;
 }
 .iwill-holder .txt {
@@ -3595,7 +3601,7 @@ margin: 0;
 padding: 3px 13px 3px 5px;
 height: 22px;
 color: #999;
-font: 18px Arial, Helvetica, sans-serif;
+font: 18px "Segoe UI", Arial, Helvetica, sans-serif;
 border: 1px solid #c6c6d4;
 background: #fff url(<?php echo $imageurl;
 ?>/bg-input02.gif) repeat-x;
@@ -3693,7 +3699,7 @@ list-style: none;
 float: left;
 padding: 0 3px;
 color: #3a8aa8;
-font: bold 1.167em/1.64em Helvetica, Arial, sans-serif;
+font: bold 1.167em/1.64em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .paging ul li a, .paging ul li span {
 color: #3a8aa8;
@@ -3752,7 +3758,7 @@ background: url(<?php echo $imageurl;
 .side-nav .c {
 height: 1%;
 overflow: hidden;
-background: #D8F5FF;
+background: #DDF3FF;
 padding: 0 8px;
 }
 .side-nav ul, .side-nav ul li ul {
@@ -3763,17 +3769,17 @@ height: 1%;
 overflow: hidden;
 }
 .side-nav ul li, .side-nav ul li ul li {
-padding: 4px 0 4px 12px;
-font: 16px Helvetica, Arial, sans-serif;
+padding: 5px 0 5px 12px;
+font: 16px "Segoe UI", Arial, Helvetica, sans-serif;
 text-transform: capitalize;
 }
 .side-nav ul li ul li {
 padding: 0 0 7px 0;
 }
 .side-nav ul li.active {
-background: url(<?php echo $imageurl;
-?>/bg-category-active.png) no-repeat 0 0;
+background-color: #ABE7FE;
 font-weight: bold;
+border-radius: 5px;
 }
 .side-nav ul li ul li.active {
 background: url(<?php echo $imageurl;
@@ -3822,7 +3828,7 @@ line-height: 1em;
 color: #575757;
 display: block;
 padding: 0 0 2px;
-font: bold 1.833em/0.8em Helvetica, Arial, sans-serif;
+font: bold 1.833em/0.8em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .suggest {
 height: 1%;
@@ -3848,7 +3854,7 @@ padding: 7px 6px 3px 2px;
 .suggest h3 {
 margin: 1px 0 12px;
 color: #2b5e31;
-font: bold 1.9166em/1em Helvetica, Arial, sans-serif;
+font: bold 1.9166em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .suggest-form {
 padding: 0 4px 9px 7px;
@@ -3857,14 +3863,14 @@ overflow: hidden;
 background: url(<?php echo $imageurl;
 ?>/bg-line02.gif) repeat-x 0 100%}
 .suggest-form label {
-font: bold 1.167em Arial, Helvetica, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #5fb769;
 display: block;
 padding: 0 0 6px;
 width: 151px;
 }
 .suggest-form textarea {
-font: normal 14px Arial, Helvetica, sans-serif;
+font: normal 14px "Segoe UI", Arial, Helvetica, sans-serif;
 width: 151px;
 padding: 2px 0 0 7px;
 height: 60px;
@@ -3885,7 +3891,7 @@ margin-left: -8px;
 }
 .recent-suggestions p {
 margin: 0 0 0 7px;
-font: bold 1.167em Arial, Helvetica, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #5eb768;
 }
 .recent-suggestions ul {
@@ -3962,13 +3968,13 @@ padding-bottom: 10px;
 }
 .article .order .five-dollars {
 color: #00d4ff;
-font: 3.5833em/1.13em Arial, Helvetica, sans-serif;
+font: 3.5833em/1.13em "Segoe UI", Arial, Helvetica, sans-serif;
 display: block;
 }
 .article .order p {
 margin: 6px 0 0;
 color: #b8b8b8;
-font: .834em Helvetica, Arial, sans-serif;
+font: .834em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .article .ar-description {
 font-size: 15px;
@@ -3985,7 +3991,7 @@ margin: 20px 0 0;
 .article-txt h1 {
 color: #0094bf;
 letter-spacing: -1px;
-font: bold 1.9166em/1em Helvetica, Arial, sans-serif;
+font: bold 1.9166em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0 0 8px;
 width: 480px;
 }
@@ -3994,7 +4000,7 @@ position: static;
 display: inline;
 }
 .article-txt ul.control li {
-font: 1.1em/1.334em Helvetica, Arial, sans-serif;
+font: 1.1em/1.334em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .article-txt ul.control span {
 margin-top: 1px;
@@ -4005,7 +4011,7 @@ color: #6f6f6f;
 .article-txt p {
 margin: 0 30px 5px 0;
 color: #212121;
-font: 1.167em Arial, Helvetica, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .article .image-box {
 height: 1%;
@@ -4026,7 +4032,7 @@ margin: 0;
 list-style: none;
 }
 ul.tags li {
-font: bold 1.084em/1em Helvetica, Arial, sans-serif;
+font: bold 1.084em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 padding: 0 2px 5px 0;
 float: left;
 }
@@ -4123,13 +4129,13 @@ margin: 2px 0px 0 0;
 .seller h1 {
 color: #08708E;
 letter-spacing: -1px;
-font: bold 1.7166em/1em Helvetica, Arial, sans-serif;
+font: bold 1.7166em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0 0 2px;
 width: 380px;
 }
 .seller h2 {
 margin: 0 0 5px;
-font: 1.833em/1.2em Helvetica, Arial, sans-serif;
+font: 1.833em/1.2em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .seller h2 strong, .article-info h3 strong {
 color: #0095c0;
@@ -4139,7 +4145,7 @@ color: #337fa6;
 vertical-align: middle;
 }
 .seller h2 em {
-font: 0.633em/1.2em Helvetica, Arial, sans-serif;
+font: 0.633em/1.2em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #337fa6;
 margin-left: 10px;
 }
@@ -4148,7 +4154,7 @@ margin: 0;
 display: table;
 height: 1%;
 color: #6f6f6f;
-font: 1.167em Arial, Helvetica, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 ul.share-control {
 padding: 0;
@@ -4164,7 +4170,7 @@ margin: 0;
 ul.share-control a {
 color: #0095c6;
 text-decoration: none;
-font: 1em/1.6em Arial, Helvetica, sans-serif;
+font: 1em/1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 border: 0;
 }
 ul.share-control a:hover {
@@ -4195,7 +4201,7 @@ padding-left: 22px;
 color: #0095c6;
 text-decoration: none;
 vertical-align: top;
-font: 1em/1.6em Helvetica, Arial, sans-serif;
+font: 1em/1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 ul.gig-meta a:hover {
 background-position: 0 -16px!important;
@@ -4205,7 +4211,7 @@ float: left;
 margin-right: 2px;
 font-style: normal;
 cursor: pointer;
-font: 1em/1.6em Helvetica, Arial, sans-serif;
+font: 1em/1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 ul.gig-meta span {
 height: 16px;
@@ -4223,7 +4229,7 @@ cursor: default;
 float: left;
 color: #6f6f6f;
 vertical-align: top;
-font: 1em/1.6em Helvetica, Arial, sans-serif;
+font: 1em/1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 ul.gig-meta .like span {
 background: url(<?php echo $imageurl;
@@ -4260,7 +4266,7 @@ cursor: default;
 float: left;
 color: #6f6f6f;
 vertical-align: top;
-font: .834em/1.6em Helvetica, Arial, sans-serif;
+font: .834em/1.6em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .article-info {
 height: 1%;
@@ -4269,7 +4275,7 @@ overflow: hidden;
 .article-info h3 {
 margin: 0 0 3px;
 color: #474747;
-font: bold 1.433em Helvetica, Arial, sans-serif;
+font: bold 1.433em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .feedback {
 background: #FEFEFE;
@@ -4288,7 +4294,7 @@ height: 1%;
 overflow: hidden;
 color: #212121;
 padding: 0 0 2px;
-font: 1.167em Helvetica, Arial, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .feedback ul img {
 float: left;
@@ -4349,7 +4355,7 @@ padding-top: 2px;
 .other-gigs ul li, .related-gigs ul li {
 height: 1%;
 color: #212121;
-font: 1.167em Helvetica, Arial, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 overflow: hidden;
 margin-top: 5px;
 }
@@ -4383,14 +4389,13 @@ height: 38px;
 }
 .search input.text {
 float: left;
-font: bold 14px Helvetica, Arial, sans-serif;
+font: 14px "Segoe UI", Arial, Helvetica, sans-serif;
 color: #747474;
 width: 110px;
 margin: 0;
 height: 16px;
-padding: 7px 7px 4px;
+padding: 5px 7px 6px;
 border: 1px solid #b7bbca;
-background: #fff url(/images/bg-small-search-box-idle.gif) repeat-x;
 }
 .gecko.mac.ff3 .search input.text {
 padding: 7px 7px 4px;
@@ -4431,7 +4436,7 @@ margin: -28px 0 0;
 .sidebar .share h3 {
 margin: 0 0 2px;
 color: #474747;
-font: 1.833em Helvetica, Arial, sans-serif;
+font: 1.833em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .sidebar .share ul {
 padding: 0 0 10px;
@@ -4439,7 +4444,7 @@ margin: 0;
 list-style: none;
 height: 1%;
 overflow: hidden;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .sidebar .share ul a {
 color: #0d8ead;
@@ -4466,7 +4471,7 @@ padding: 8px 16px 10px 15px;
 .account-settings h1 {
 margin: 0 0 12px;
 color: #474747;
-font: 1.833em Helvetica, Arial, sans-serif;
+font: 1.833em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .account-settings h1 strong {
 display: block;
@@ -4479,7 +4484,7 @@ overflow: hidden;
 .account-settings .message p {
 margin: 0 11px 8px 0;
 color: #474747;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .account-settings .message p a {
 color: #0d8eae;
@@ -4511,7 +4516,7 @@ padding: 23px 0 0;
 }
 .approve-reject p.important {
 color: #e90000;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0;
 text-align: center;
 }
@@ -4526,7 +4531,7 @@ width: 132px;
 }
 .approve a, .reject a {
 color: #00be00;
-font: 2.5em Helvetica, Arial, sans-serif;
+font: 2.5em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .reject a {
 color: #e90000;
@@ -4576,11 +4581,11 @@ margin-bottom: 9px;
 }
 .thank-txt h2 {
 color: #009300;
-font: bold 2em Helvetica, Arial, sans-serif;
+font: bold 2em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0 0 15px;
 }
 .thank-txt p {
-font: 1.167em Helvetica, Arial, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 margin-top: 0px;
 }
 .thank-form {
@@ -4589,7 +4594,7 @@ width: 240px;
 }
 .thank-form p {
 color: #009300;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0 0 16px;
 }
 .thank-form .row {
@@ -4600,7 +4605,7 @@ overflow: hidden;
 .thank-form label {
 float: left;
 padding-right: 30px;
-font: 1.167em/1em Helvetica, Arial, sans-serif;
+font: 1.167em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .thank-form input.radio {
 padding: 0;
@@ -4622,13 +4627,13 @@ margin: 0 4px 0 0;
 color: #009300;
 float: none;
 padding-bottom: 3px;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 display: block;
 }
 .thank-form textarea {
 border: 1px solid #acdca4;
 color: #292929;
-font: 14px Helvetica, Arial, sans-serif;
+font: 14px "Segoe UI", Arial, Helvetica, sans-serif;
 width: 230px;
 padding: 5px 0 0 8px;
 height: 104px;
@@ -4649,10 +4654,10 @@ margin: 9px 13px 7px;
 }
 .hmm-txt h2 {
 margin: 0;
-font: bold 2em Helvetica, Arial, sans-serif;
+font: bold 2em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .hmm-txt p {
-font: 1.167em Helvetica, Arial, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0 0 18px;
 }
 .hmm-form {
@@ -4663,7 +4668,7 @@ width: 242px;
 display: block;
 color: #474747;
 padding: 0 0 2px 3px;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .hmm-form textarea {
 border: 1px solid #ddc1c1;
@@ -4671,7 +4676,7 @@ width: 232px;
 padding: 6px 0 0 8px;
 height: 170px;
 overflow: auto;
-font: 14px Helvetica, Arial, sans-serif;
+font: 14px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .inbox-compose {
 height: 1%;
@@ -4688,7 +4693,7 @@ float: right;
 padding: 0;
 margin: 0;
 list-style: none;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 text-align: right;
 }
 .inbox-compose .title ul a {
@@ -4696,7 +4701,7 @@ color: #0095c0;
 }
 .inbox-compose .title h2, .inbox-message .title h2 {
 color: #464646;
-font: 22px Helvetica, Arial, sans-serif;
+font: 22px "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0;
 }
 .inbox-compose .title h2 strong, .inbox-message .title h2 strong {
@@ -4716,7 +4721,7 @@ overflow: hidden;
 margin: 0;
 padding: 0 0 7px 11px;
 line-height: 17px;
-font: 1.167em Helvetica, Arial, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 dl.subject-list dt {
 float: left;
@@ -4748,13 +4753,13 @@ overflow: hidden;
 .compose-form label {
 float: left;
 width: 69px;
-font: 1.167em/1.7em Helvetica, Arial, sans-serif;
+font: 1.167em/1.7em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .compose-form input.text {
 float: left;
 width: 220px;
 padding: 4px 5px;
-font: 14px Helvetica, Arial, sans-serif;
+font: 14px "Segoe UI", Arial, Helvetica, sans-serif;
 border: 1px solid #cddee6;
 }
 .compose-form textarea {
@@ -4764,7 +4769,7 @@ padding: 4px 0 0 5px;
 overflow: auto;
 float: left;
 height: 141px;
-font: 14px Helvetica, Arial, sans-serif;
+font: 14px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .compose-form .attachment, .notify-form .attachment {
 height: 1%;
@@ -4774,11 +4779,11 @@ clear: both;
 }
 .compose-form .attachment p, .notify-form .attachment p {
 margin: 0 0 3px;
-font: 1.167em Helvetica, Arial, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .compose-form .attachment p em, .notify-form .attachment p em {
 color: #616161;
-font: .858em Helvetica, Arial, sans-serif;
+font: .858em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .browse {
 height: 1%;
@@ -4795,7 +4800,7 @@ clear: both;
 float: left;
 margin-right: 8px;
 color: #0095c0;
-font: 1.167em/1.71em Helvetica, Arial, sans-serif;
+font: 1.167em/1.71em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .compose-form input.button {
 float: right;
@@ -4824,7 +4829,7 @@ list-style: none;
 ul.show-list li {
 float: left;
 padding-right: 2px;
-font: .917em Arial, Helvetica, sans-serif;
+font: .917em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .control-message {
 height: 1%;
@@ -4929,7 +4934,7 @@ font-size: 1.18em;
 overflow: hidden;
 padding: 5px;
 margin-bottom: 10px;
-font: bold 18px Arial, Helvetica, sans-serif;
+font: bold 18px "Segoe UI", Arial, Helvetica, sans-serif;
 background: #d8f5ff;
 }
 .message-show .msgbody {
@@ -4957,12 +4962,12 @@ float: right;
 padding: 0;
 margin: 0;
 list-style: none;
-font: bold 12px Helvetica, Arial, sans-serif;
+font: bold 12px "Segoe UI", Arial, Helvetica, sans-serif;
 text-align: right;
 }
 .message-show .title h2 {
 color: #2791B9;
-font: 1.833em/1.1em Helvetica, Arial, sans-serif;
+font: 1.833em/1.1em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0;
 }
 dl.subject-list {
@@ -4972,14 +4977,14 @@ overflow: hidden;
 margin: 0;
 padding: 0;
 line-height: 17px;
-font: normal 16px Arial, Helvetica, sans-serif;
+font: normal 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .message-show dl.message-details dt {
 float: left;
 padding: 0;
 margin: 0;
 clear: left;
-font: normal 12px Arial, Helvetica, sans-serif;
+font: normal 12px "Segoe UI", Arial, Helvetica, sans-serif;
 width: 80px;
 }
 .message-show .message-details-wrapper {
@@ -4992,10 +4997,10 @@ margin: 0;
 padding: 0 0 3px;
 overflow: hidden;
 height: 1%;
-font: normal 12px Arial, Helvetica, sans-serif;
+font: normal 12px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .message-show div.message-details-title {
-font: bold 18px Arial, Helvetica, sans-serif;
+font: bold 18px "Segoe UI", Arial, Helvetica, sans-serif;
 background: #d8f5ff;
 margin-bottom: 10px;
 width: 100%;
@@ -5017,7 +5022,7 @@ width: 90px;
 width: 482px;
 }
 .message-details-holder .regard {
-font: bold 1.1em Arial, Helvetica, sans-serif;
+font: bold 1.1em "Segoe UI", Arial, Helvetica, sans-serif;
 background: #d8f5ff;
 }
 .message-details-holder-compose {
@@ -5036,7 +5041,7 @@ width: 90px;
 width: 478px;
 }
 .message-details-holder-compose .regard {
-font: bold 1.1em Arial, Helvetica, sans-serif;
+font: bold 1.1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .edit-gig {
 height: 1%;
@@ -5051,7 +5056,7 @@ overflow: hidden;
 }
 .edit-gig .title h2 {
 margin: 0 0 3px;
-font: 1.833em Helvetica, Arial, sans-serif;
+font: 1.833em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #474747;
 }
 .edit-gig .title p {
@@ -5110,7 +5115,7 @@ margin-top: 12px;
 float: left;
 clear: both;
 width: 80px;
-font: 16px Arial, Helvetica, sans-serif;
+font: 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .edit-gig-form .editgigformtitle {
 font-size: 16px;
@@ -5121,7 +5126,7 @@ width: 100%}
 padding: 0px 0px 7px 0px;
 width: auto;
 clear: none;
-font: normal 16px Arial, Helvetica, sans-serif;
+font: normal 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .validationmsg {
 font-size: 16px;
@@ -5136,7 +5141,7 @@ height: 17px;
 }
 .edit-gig-form .browsefile {
 margin-top: 5 px;
-font: normal 16px Arial, Helvetica, sans-serif;
+font: normal 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .edit-gig-form input.text {
 float: left;
@@ -5145,7 +5150,7 @@ background: #fff url(<?php echo $imageurl;
 ?>/bg-input.gif) repeat-x;
 border: 1px solid #bac1d2;
 padding: 3px 5px 4px;
-font: normal 16px Arial, Helvetica, sans-serif;
+font: normal 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .edit-gig-form input.text-title {
 float: left;
@@ -5154,7 +5159,7 @@ background: #fff url(<?php echo $imageurl;
 ?>/bg-input.gif) repeat-x;
 border: 1px solid #bac1d2;
 padding: 3px 5px 4px;
-font: normal 20px Arial, Helvetica, sans-serif;
+font: normal 20px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .edit-gig-form input.price-title {
 float: left;
@@ -5163,7 +5168,7 @@ background: #fff url(<?php echo $imageurl;
 ?>/bg-input.gif) repeat-x;
 border: 1px solid #bac1d2;
 padding: 3px 5px 4px;
-font: normal 20px Arial, Helvetica, sans-serif;
+font: normal 20px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .edit-gig-form .errortext {
 float: left;
@@ -5173,7 +5178,7 @@ background: #fff url(<?php echo $imageurl;
 ?>/bg-input.gif) repeat-x;
 border: 1px solid #F00;
 padding: 3px 5px 4px;
-font: normal 16px Arial, Helvetica, sans-serif;
+font: normal 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .edit-gig-form .tip-text {
 width: 90%}
@@ -5208,7 +5213,7 @@ background: #fff url(<?php echo $imageurl;
 ?>/bg-input.gif) repeat-x;
 border: 1px solid #bac1d2;
 padding: 0px;
-font: normal 16px Arial, Helvetica, sans-serif;
+font: normal 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .edit-gig-form .categoryselection {
 margin: 0;
@@ -5231,7 +5236,7 @@ clear: none;
 .edit-gig-form textarea {
 border: 1px solid #a0dc8c;
 float: left;
-font: normal 16px Arial, Helvetica, sans-serif;
+font: normal 16px "Segoe UI", Arial, Helvetica, sans-serif;
 color: #292929;
 width: 400px;
 padding: 5px 0 0 9px;
@@ -5291,7 +5296,7 @@ padding: 12px 15px 7px 14px;
 }
 .notify-gig h2 {
 margin: 0 0 14px;
-font: 1.833em/1.2em Helvetica, Arial, sans-serif;
+font: 1.833em/1.2em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .notify-gig h2 strong {
 display: block;
@@ -5304,7 +5309,7 @@ height: 1%;
 margin-bottom: 5px;
 padding: 0 5px 0 8px;
 overflow: hidden;
-font: 1.167em/2em Helvetica, Arial, sans-serif;
+font: 1.167em/2em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .notify-status a {
 color: #0094bf;
@@ -5325,11 +5330,11 @@ text-align: right;
 }
 .notify-status .mark {
 color: #eb0000;
-font: bold 1em Helvetica, Arial, sans-serif;
+font: bold 1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .notify-status .ontime {
 color: #009c00;
-font: bold 1em Helvetica, Arial, sans-serif;
+font: bold 1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .notify-form {
 background: #c7ffb7;
@@ -5343,11 +5348,11 @@ overflow: hidden;
 display: block;
 padding: 0 0 3px;
 color: #474747;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .notify-form textarea {
 border: 1px solid #a0dc8c;
-font: 14px Helvetica, Arial, sans-serif;
+font: 14px "Segoe UI", Arial, Helvetica, sans-serif;
 width: 486px;
 display: block;
 height: 180px;
@@ -5377,7 +5382,7 @@ position: absolute;
 top: 5px;
 left: 210px;
 width: 285px;
-font: 1.167em Helvetica, Arial, sans-serif;
+font: 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .tip em {
 float: left;
@@ -5464,7 +5469,7 @@ border-collapse: collapse;
 }
 .order-table td {
 padding: 4px;
-font: 1.167em/1.79em Helvetica, Arial, sans-serif;
+font: 1.167em/1.79em "Segoe UI", Arial, Helvetica, sans-serif;
 vertical-align: middle;
 }
 .order-table tbody tr.first-child td, .order-table tbody tr:first-child td {
@@ -5847,7 +5852,7 @@ margin: 31px 0 0;
 .reset-form h3 {
 color: #0095c0;
 margin: 0 0 3px;
-font: bold 1.167em Helvetica, Arial, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .settings-form .row {
 width: 100%;
@@ -6177,10 +6182,10 @@ color: #2f2f2f;
 background: url(<?php echo $imageurl;
 ?>/bg-alert-shadow.gif) repeat-x;
 overflow: hidden;
-font: bold 1em Arial, Helvetica, sans-serif;
+font: bold 1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .alert em {
-font: bold 1em Arial, Helvetica, sans-serif;
+font: bold 1em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #df0000;
 }
 .alert a {
@@ -6217,7 +6222,7 @@ overflow: hidden;
 }
 .add-nav ul li {
 padding: 0 0 7px 12px;
-font: 1.334em Helvetica, Arial, sans-serif;
+font: 1.334em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .add-nav ul a {
 color: #25641f;
@@ -6274,7 +6279,7 @@ color: #fff;
 overflow: hidden;
 position: relative;
 margin: -24px 0 8px;
-font: .834em/1em Arial, Helvetica, sans-serif;
+font: .834em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .sidebar .useful .c, .sidebar .useful ul {
 padding-bottom: 0;
@@ -6293,7 +6298,7 @@ font-style: normal;
 color: #535353;
 }
 .invite strong {
-font: bold 1.833em/0.8em Helvetica, Arial, sans-serif;
+font: bold 1.833em/0.8em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #f400f5;
 display: block;
 }
@@ -6313,7 +6318,7 @@ margin: 0 0 12px;
 padding-bottom: 0;
 }
 .ideas ul li {
-font: bold .85em Helvetica, Arial, sans-serif;
+font: bold .85em "Segoe UI", Arial, Helvetica, sans-serif;
 padding: 0 8px 2px 0;
 border-bottom: dotted 1px lightgray;
 margin-top: 5px;
@@ -6334,7 +6339,7 @@ overflow: hidden;
 }
 .user-notifications .title h2 {
 margin: 0 0 3px;
-font: 1.833em Helvetica, Arial, sans-serif;
+font: 1.833em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #474747;
 }
 .user-notifications .messagebody {
@@ -6404,12 +6409,12 @@ right: 0;
 padding-left: 19px;
 height: 14px;
 padding-top: 2px;
-font: .65em Helvetica, Arial, sans-serif;
+font: .65em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .page .up-user h1 {
 color: #08708E;
 letter-spacing: -1px;
-font: bold 1.7166em/1em Helvetica, Arial, sans-serif;
+font: bold 1.7166em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0 0 2px;
 }
 .page .up-user p {
@@ -6470,7 +6475,7 @@ display: block;
 .page .up-gig-pricetag {
 margin-top: 7px;
 float: left;
-font: normal 55px Helvetica, Arial, sans-serif;
+font: normal 55px "Segoe UI", Arial, Helvetica, sans-serif;
 color: rgb(0, 212, 255);
 }
 .page .up-gig-description {
@@ -6517,7 +6522,7 @@ margin: 0 0 5px;
 .page .heading h1 {
 color: #08708E;
 letter-spacing: -1px;
-font: bold 1.7166em/1em Helvetica, Arial, sans-serif;
+font: bold 1.7166em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0 0 2px;
 width: 400px;
 }
@@ -6690,7 +6695,7 @@ margin-left: -8px;
 }
 .recent-suggestions p {
 margin: 0 0 0 7px;
-font: bold 1.167em Arial, Helvetica, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #5eb768;
 }
 .recent-suggestions ul {
@@ -6869,7 +6874,7 @@ top: 0px;
 left: 150px;
 margin: 0px;
 padding: 4px 0 0 22px;
-font: bold 16px arial, helvetica, sans-serif;
+font: bold 16px "Segoe UI", Arial, Helvetica, sans-serif;
 background: url(<?php echo $imageurl;
 ?>/bg-logout-teaser-balloon.png) no-repeat;
 width: 252px;
@@ -6990,7 +6995,7 @@ border-color: #ffa1a1;
 */.welcome {
 float: right;
 margin: 5px 7px 0px 7px;
-font: .917em/2.3em Arial, Helvetica, sans-serif;
+font: .917em/2.3em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #fff;
 }
 .welcome a {
@@ -7014,25 +7019,25 @@ position: relative;
 top: 48px;
 left: 10px;
 width: 500px;
-font: 1.8em arial, helvetica, sans-serif;
+font: 1.8em "Segoe UI", Arial, Helvetica, sans-serif;
 line-height: 1.1em;
 letter-spacing: -0.01em;
 letter-spacing: -0.03em\9;
 }
 .welcomebox h2 {
 top: 54px !important;
-font: italic 1.3em arial, helvetica, sans-serif;
+font: italic 1.3em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #6c6c6c;
 }
 .topmenu {
-font-family: Arial, Helvetica, sans-serif;
+font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 font-size: 15px;
 float: left;
 /* background: #414141;
 * width: 100%;
 */}
 .topmenu ul {
-margin: 0;
+margin: 7px 0 0;
 padding: 0;
 list-style-type: none;
 background: #232323;
@@ -7138,7 +7143,7 @@ min-width: 600px;
 color: #555;
 letter-spacing: -1px;
 margin-top: 15px;
-font: bold 1.9166em/1em Helvetica, Arial, sans-serif;
+font: bold 1.9166em/1em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .how-it-works-wrapper ul {
 padding: 0 0 5px 16px;
@@ -7151,13 +7156,13 @@ padding: 0;
 }
 .how-it-works-wrapper ul li {
 padding: 0 0 0 -10px;
-font: bold 1.167em Arial, Helvetica, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #000;
 }
 .how-it-works-wrapper p {
 text-align: center;
 line-height: 18px;
-font: normal 1.167em Arial, Helvetica, sans-serif;
+font: normal 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 margin-top: 4px;
 }
 .how-it-works-wrapper .arrow-down {
@@ -7207,7 +7212,7 @@ background-position: right;
 height: 6px;
 }
 .how-it-works-wrapper .c .more {
-font: bold 1.167em Arial, Helvetica, sans-serif;
+font: bold 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #333;
 margin: 0 0 0 10px;
 }
@@ -7245,7 +7250,7 @@ margin: 0;
 color: #12deeb;
 }
 #errorExplanation h2 {
-font: bold 1.367em Arial, Helvetica, sans-serif;
+font: bold 1.367em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #d44;
 margin: 0 0 4px;
 }
@@ -7295,7 +7300,7 @@ padding-bottom: 10px;
 color: #777;
 width: 100%;
 float: left;
-font: normal 1.167em Arial, Helvetica, sans-serif;
+font: normal 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .join label.style1 {
 float: left;
@@ -7304,7 +7309,7 @@ margin-left: 48px;
 }
 .join label.style2 {
 float: left;
-font: 1em Arial, Helvetica, sans-serif;
+font: 1em "Segoe UI", Arial, Helvetica, sans-serif;
 letter-spacing: -0.02em;
 margin: 15px 0 0;
 width: 180px;
@@ -7319,7 +7324,7 @@ background: #fff url(<?php echo $imageurl;
 border: 1px solid #c2ccba;
 padding: 3px 5px 4px;
 float: left;
-font: 16px Arial, Helvetica, sans-serif;
+font: 16px "Segoe UI", Arial, Helvetica, sans-serif;
 width: 300px;
 }
 .join input.style1 {
@@ -7353,7 +7358,7 @@ width: 155px;
 .captcha span {
 float: left;
 color: #33BB33;
-font: bold 1.1167em/2em Arial, Helvetica, sans-serif;
+font: bold 1.1167em/2em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .join input.checkbox {
 padding: 0;
@@ -7393,7 +7398,7 @@ float: left;
 width: 143px;
 padding: 0 10px 0 0;
 color: #777;
-font: normal 1.167em Arial, Helvetica, sans-serif;
+font: normal 1.167em "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .login .longlabel {
 width: 250px;
@@ -7413,7 +7418,7 @@ background: #fff url(<?php echo $imageurl;
 ?>/bg-input.gif) repeat-x;
 border: 1px solid #bac1d2;
 padding: 3px 5px 4px;
-font: 16px Arial, Helvetica, sans-serif;
+font: 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .login .row .textlong {
 float: left;
@@ -7423,7 +7428,7 @@ background: #fff url(<?php echo $imageurl;
 ?>/bg-input.gif) repeat-x;
 border: 1px solid #bac1d2;
 padding: 3px 5px 4px;
-font: 16px Arial, Helvetica, sans-serif;
+font: 16px "Segoe UI", Arial, Helvetica, sans-serif;
 }
 .login .row a {
 float: left;
@@ -7519,7 +7524,7 @@ overflow: visible;
 position: relative;
 border: 1px dotted #CCC;
 margin-bottom: 10px;
-font: 1em Arial, Helvetica, sans-serif;
+font: 1em "Segoe UI", Arial, Helvetica, sans-serif;
 min-height: 80px;
 overflow: hidden;
 }
@@ -7529,7 +7534,7 @@ left: 4px;
 top: 4px;
 }
 .seller-order-box h2 {
-font: bold 1.067em Arial, Helvetica, sans-serif;
+font: bold 1.067em "Segoe UI", Arial, Helvetica, sans-serif;
 margin: 0 0 6px;
 padding: 0;
 }
@@ -7540,7 +7545,7 @@ background: url(<?php echo $imageurl;
 ?>/bg-iwill.png);
 }
 .seller-order-box b {
-font: bold 1.367em Arial, Helvetica, sans-serif;
+font: bold 1.367em "Segoe UI", Arial, Helvetica, sans-serif;
 color: red;
 }
 .seller-order-box em {
@@ -7581,7 +7586,7 @@ background: #FEE9E8;
 background: #F9FEE8;
 }
 .seller-order-box .order-completed p {
-font: bold 1.267em Arial, Helvetica, sans-serif;
+font: bold 1.267em "Segoe UI", Arial, Helvetica, sans-serif;
 color: gray;
 }
 .seller-order-box .late {

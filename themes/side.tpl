@@ -7,7 +7,7 @@
                       <div class="c">
                         <form action="{$baseurl}/search" id="search_form" method="get">      
                         	<div class="search">
-                            	<input class="text swap-value-small-search" id="query" name="query" type="text" value="" />
+                            	<input class="text swap-value-small-search" id="query" name="query" type="text" value="" placeholder="{$lang465}"/>
                             	<input type="image" src="{$imageurl}/btn-go02.gif" alt="Go" class="button" />
                           	</div>
                         </form>

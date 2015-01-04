@@ -7,16 +7,10 @@
                   	{if $smarty.session.USERID ne ""}
                     {include file="sub_bit.tpl"}
                     {else}
-                    <div class="welcomebox">
-                      <div style="position:relative;">
-                      	<div class="how-it-works-button">
-                          <a href="#" id="show-how-it-works" rel="#how-it-work-spotlight">
-                            {$lang419}
-                          </a>
+                      <a href="#" id="show-how-it-works" rel="#how-it-work-spotlight">
+                        <div class="welcomebox">
                         </div>
-                      </div>
-                      
-                    </div>
+                      </a>
 					{/if}
                     <div class="how-it-work-popup apple_overlay" id="how-it-work-spotlight" style="display:none;">
                       <div class="how-it-works-wrapper" id="how-it-works-spot">

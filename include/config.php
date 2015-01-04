@@ -2,13 +2,13 @@
 $config = array();
 
 // Begin Configuration
-$config['basedir']     =  '/home/cheericr/public_html';
-$config['baseurl']     =  'http://cheerick.ru';
+$config['basedir']     =  'D:/projects/drunken-lana';
+$config['baseurl']     =  'http://cheericr';
 
 $DBTYPE = 'mysql';
 $DBHOST = 'localhost';
-$DBUSER = 'cheericr_easy100';
-$DBPASSWORD = 'EpAje7a2Ugu4Unu2';
+$DBUSER = 'root';
+$DBPASSWORD = '';
 $DBNAME = 'cheericr_easy100';
 define('VK_APPID', '2258301');
 define('VK_APP_PASS', 'odpPuBLbXEFqoJxI6oKw');
@@ -41,7 +41,7 @@ function strip_mq_gpc($arg)
   	$arg = str_replace('"',"'",$arg);
   	$arg = stripslashes($arg);
     return $arg;
-  } 
+  }
   else
   {
     $arg = str_replace('"',"'",$arg);
@@ -159,7 +159,7 @@ function destroy_slrememberme($username) {
         setcookie ("slrememberme", "", time() - 3600);
 }
 
-if (!isset($_SESSION["USERNAME"]) && isset($_COOKIE['slrememberme'])) 
+if (!isset($_SESSION["USERNAME"]) && isset($_COOKIE['slrememberme']))
 {
         $sql="update members set remember_me_time=NULL and remember_me_key=NULL WHERE remember_me_time<'".date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")-1, date("d"),   date("Y")))."'";
         $conn->execute($sql);
@@ -177,7 +177,7 @@ if (!isset($_SESSION["USERNAME"]) && isset($_COOKIE['slrememberme']))
 				$error = "Error: Your account has been disabled by the administrator.";
 			}
     		if($error=="")
-			{				
+			{
 				$_SESSION['USERID']=$rs->fields['USERID'];
 				$_SESSION['EMAIL']=$rs->fields['email'];
 				$_SESSION['USERNAME']=$rs->fields['username'];
@@ -191,7 +191,7 @@ if (!isset($_SESSION["USERNAME"]) && isset($_COOKIE['slrememberme']))
         }
 }
 
-function generateCode($length) 
+function generateCode($length)
 {
 	$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRQSTUVWXYZ0123456789";
     $code = "";
@@ -211,7 +211,7 @@ if($config['enable_fc'] == "1")
 		define('FACEBOOK_SECRET', $B);
 		STemplate::assign('FACEBOOK_APP_ID',$A);
 		STemplate::assign('FACEBOOK_SECRET',$B);
-		
+
 		function get_facebook_cookie($app_id, $application_secret) {
 		  $args = array();
 		  parse_str(trim($_COOKIE['fbs_' . $app_id], '\\"'), $args);
@@ -227,23 +227,23 @@ if($config['enable_fc'] == "1")
 		  }
 		  return $args;
 		}
-		
+
 		$cookie = get_facebook_cookie(FACEBOOK_APP_ID, FACEBOOK_SECRET);
-		
+
 		$fid = $cookie['uid'];
-		
+
 		if(isset($fid))
 		{
 			$femail = json_decode(file_get_contents('https://graph.facebook.com/me?access_token='.$cookie['access_token']))->email;
 			$fname = json_decode(file_get_contents('https://graph.facebook.com/me?access_token='.$cookie['access_token']))->name;
 			$fname = htmlentities(strip_tags($fname), ENT_COMPAT, "UTF-8");
 			$femail = htmlentities(strip_tags($femail), ENT_COMPAT, "UTF-8");
-			
+
 			$query="SELECT USERID FROM members WHERE email='".mysql_real_escape_string($femail)."' limit 1";
 			$executequery=$conn->execute($query);
 			$FUID = intval($executequery->fields['USERID']);
 			if($FUID > 0)
-			{									
+			{
 				$query="SELECT USERID,email,username,verified from members WHERE USERID='".mysql_real_escape_string($FUID)."' and status='1'";
 				$result=$conn->execute($query);
 				if($result->recordcount()>0)
@@ -254,14 +254,14 @@ if($config['enable_fc'] == "1")
 					$_SESSION['EMAIL']=$result->fields['email'];
 					$_SESSION['USERNAME']=$result->fields['username'];
 					$_SESSION['VERIFIED']=$result->fields['verified'];
-					$_SESSION['FB']="1";			
+					$_SESSION['FB']="1";
 					header("Location:$config[baseurl]/");exit;
 				}
 			}
 			else
 			{
 				$md5pass = md5(generateCode(5).time());
-				
+
 				if($fname != "" && $femail != "")
 				{
 					$query="INSERT INTO members SET email='".mysql_real_escape_string($femail)."',username='".mysql_real_escape_string($fname)."', password='".mysql_real_escape_string($md5pass)."', addtime='".time()."', lastlogin='".time()."', ip='".$_SERVER['REMOTE_ADDR']."', lip='".$_SERVER['REMOTE_ADDR']."', verified='1'";
@@ -271,7 +271,7 @@ if($config['enable_fc'] == "1")
 					{
 						$query="SELECT USERID,email,username,verified from members WHERE USERID='".mysql_real_escape_string($userid)."'";
 						$result=$conn->execute($query);
-						
+
 						$SUSERID = $result->fields['USERID'];
 						$SEMAIL = $result->fields['email'];
 						$SUSERNAME = $result->fields['username'];
@@ -280,7 +280,7 @@ if($config['enable_fc'] == "1")
 						$_SESSION['EMAIL']=$SEMAIL;
 						$_SESSION['USERNAME']=$SUSERNAME;
 						$_SESSION['VERIFIED']=$SVERIFIED;
-						$_SESSION['FB']="1";				
+						$_SESSION['FB']="1";
 						header("Location:$config[baseurl]/");exit;
 					}
 				}
