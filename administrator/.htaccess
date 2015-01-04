@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "administrator"
+AuthUserFile "/home/cheericr/.htpasswds/public_html/administrator/passwd"
+require valid-user
