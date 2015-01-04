@@ -50,6 +50,12 @@ RewriteRule ^specialoffer/*$ specialoffer.php
    # but better safe than sorry. 
    SecFilterScanPOST Off 
 </IfModule>
+<IfModule mod_php5.c>
+php_value short_open_tag 1
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+</IfModule>
 
 RewriteCond %{HTTP_HOST} ^cheerick\.ru$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.cheerick\.ru$
