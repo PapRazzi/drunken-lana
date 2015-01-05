@@ -1,0 +1,23 @@
+{
+  "name": "cheerick.ru",
+  "version": "1.0.0",
+  "description": "check cheerick.ru for details",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdorash/drunken-lana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdorash/drunken-lana/issues"
+  },
+  "homepage": "https://github.com/mdorash/drunken-lana",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-ftp-deploy": "^0.1.3"
+  }
+}
