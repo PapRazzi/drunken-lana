@@ -38,12 +38,12 @@ if (isset($_POST["MESSAGE"]) && $message === "") {
     $messageError = true;
 }
 if (isset($_POST["user_name"]) && !($nameError || $emailError || $messageError)) {
-    mail("contact@cheerick.ru", utf8_to_cp1251("Сообщение из формы обратной связи"), 
-    utf8_to_cp1251("Вы получили вопрос из формы обратной связи:\n
+    mail("contact@cheerick.ru", "Сообщение из формы обратной связи",
+        "Вы получили вопрос из формы обратной связи:\n
     \t От: $name\n
     \t Почтовый адрес: $email\n
     \t Сообщение: $message
-    "));
+    ");
     $success = true;
     $name = "";
     $email = "";
