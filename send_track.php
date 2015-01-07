@@ -99,8 +99,10 @@ if ($_SESSION['USERID'] != "" && $_SESSION['USERID'] >= 0 && is_numeric($_SESSIO
 					{
 						$query = "UPDATE orders SET status='1', stime='".time()."' WHERE OID='".mysql_real_escape_string($oid)."' AND USERID='".mysql_real_escape_string($_SESSION['USERID'])."' limit 1"; 
 						$conn->execute($query);
+						send_new_email($msgto, $oid);
+					} else {
+						send_update_email($msgto, $oid);
 					}
-					send_update_email($msgto, $oid);
 				}
 			}
 		}

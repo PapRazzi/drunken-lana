@@ -2855,6 +2855,7 @@ float: right;
 background: #034188;
 height: 50px;
 margin-bottom: -14px;
+border-radius: 0 0 6px 6px;
 }
 .inner #header .menu-holder .holder .guest {
 width: 614px;
@@ -6994,7 +6995,7 @@ border-color: #ffa1a1;
 }
 */.welcome {
 float: right;
-margin: 5px 7px 0px 7px;
+margin: 11px 7px 0px 7px;
 font: .917em/2.3em "Segoe UI", Arial, Helvetica, sans-serif;
 color: #fff;
 }
@@ -7037,10 +7038,14 @@ float: left;
 * width: 100%;
 */}
 .topmenu ul {
-margin: 7px 0 0;
+margin: 0;
 padding: 0;
 list-style-type: none;
 background: #232323;
+}
+
+.topmenu > ul {
+  margin-top: 6px;
 }
 .topmenu ul li {
 position: relative;
@@ -7099,7 +7104,7 @@ color: #003;
 }
 .downarrowclass {
 position: absolute;
-top: 12px;
+top: 15px;
 right: 7px;
 }
 .rightarrowclass {

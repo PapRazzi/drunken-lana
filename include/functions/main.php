@@ -1396,24 +1396,55 @@ function insert_get_explode($a)
 	return $tags;
 }
 
+function send_new_email($msgto, $oid)
+{
+	if($msgto > 0 && $oid > 0)
+	{
+		global $config, $conn, $lang;
+		$query = "select username,email from members where USERID='".mysql_real_escape_string($msgto)."'";
+		$executequery=$conn->execute($query);
+		$sendto = $executequery->fields['email'];
+		$sendname = $executequery->fields['username'];
+		$query = "SELECT gtitle FROM orders,posts WHERE orders.PID = posts.PID and orders.OID = '".mysql_real_escape_string($oid)."'";
+		$executequery=$conn->execute($query);
+		$gtitle = $executequery->fields['gtitle'];
+		if($sendto != "")
+		{
+			$sendername = $config['site_name'];
+			$from = $config['site_email'];
+			$subject = $lang['466'];
+			$sendmailbody = "Поздравляем, ".stripslashes($sendname)."!<br><br>";
+			$sendmailbody .= "Вашу услугу \"".stripcslashes($gtitle)."\" заказали! ".$lang['409']."<br>";
+			$sendmailbody .= "<a href=".$config['baseurl']."/track?id=$oid>".$config['baseurl']."/track?id=$oid</a><br><br>";
+			$sendmailbody .= "Пожулуйста свяжитесь с нами если у Вас возникнут какие-нибудь вопросы.<br>";
+			$sendmailbody .= "Команда cheerick.ru";
+			mailme($sendto,$sendername,$from,$subject,$sendmailbody,$bcc="");
+		}
+	}
+}
+
 function send_update_email($msgto, $oid)
 {
 	if($msgto > 0 && $oid > 0)
 	{
 		global $config, $conn, $lang;
-		$query = "select username,email from members where USERID='".mysql_real_escape_string($msgto)."'"; 
+		$query = "select username,email from members where USERID='".mysql_real_escape_string($msgto)."'";
 		$executequery=$conn->execute($query);
 		$sendto = $executequery->fields['email'];
 		$sendname = $executequery->fields['username'];
+		$query = "SELECT gtitle FROM orders,posts WHERE orders.PID = posts.PID and orders.OID = '".mysql_real_escape_string($oid)."'";
+		$executequery=$conn->execute($query);
+		$gtitle = $executequery->fields['gtitle'];
 		if($sendto != "")
 		{
 			$sendername = $config['site_name'];
 			$from = $config['site_email'];
 			$subject = $lang['407'];
-			$sendmailbody = stripslashes($sendname).",<br><br>";
-			$sendmailbody .= $lang['408']." ".$lang['409']."<br>";
+			$sendmailbody = "Добрый день, ".stripslashes($sendname)."!<br><br>";
+			$sendmailbody .= "Вам поступило новое сообщение по заказу <a href=".$config['baseurl']."/track?id=$oid>#$oid</a> (\"".stripslashes($gtitle)."\"). ".$lang['409']."<br>";
 			$sendmailbody .= "<a href=".$config['baseurl']."/track?id=$oid>".$config['baseurl']."/track?id=$oid</a><br><br>";
-			$sendmailbody .= $lang['23'].",<br>".stripslashes($sendername);
+			$sendmailbody .= "Пожулуйста свяжитесь с нами если у Вас возникнут какие-нибудь вопросы.<br>";
+			$sendmailbody .= "Команда cheerick.ru";
 			mailme($sendto,$sendername,$from,$subject,$sendmailbody,$bcc="");
 		}
 	}
