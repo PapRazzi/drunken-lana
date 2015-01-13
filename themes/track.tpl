@@ -32,7 +32,7 @@
                               <h3 class="flag"><span class="status order-rejected" title="{$lang321}">{$lang140} #{$o.OID}<b>{$lang320}</b></span></h3>
                               {/if}
 					 
-							  <h2><b><a href="{$baseurl}/{insert name=get_seo_profile value=a username=$o.username|stripslashes}">{$o.username|stripslashes}</a></b> {$lang262} {insert name=seo_clean_titles assign=title value=a title=$o.gtitle}<a href="{$baseurl}/{$o.seo|stripslashes}/{$o.PID|stripslashes}/{$title}">{$o.gtitle|stripslashes}</a> {$lang63}{$o.price|stripslashes}</h2> 
+							  <h2><b><a href="{$baseurl}/{insert name=get_seo_profile value=a username=$o.username|stripslashes}">{$o.username|stripslashes}</a></b>: {insert name=seo_clean_titles assign=title value=a title=$o.gtitle}<a href="{$baseurl}/{$o.seo|stripslashes}/{$o.PID|stripslashes}/{$title}">{$o.gtitle|stripslashes}</a> {$lang63}{$o.price|stripslashes}</h2>
 							</div> 
 						  </div> 
 						  <h3 class="started">{$lang263} <b><a href="{$baseurl}/{insert name=get_seo_profile value=a username=$o.username|stripslashes}">{$o.username|stripslashes}</a></b> on {$o.time_added|date_format:"%A, %B %e %Y"} {$lang265} {$o.time_added|date_format:"%I:%M %p"}
