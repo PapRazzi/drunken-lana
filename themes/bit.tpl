@@ -32,7 +32,7 @@
                                                             type: "mini", 
                                                             "pageUrl" : "{/literal}{$baseurl}/{$posts[i].seo|stripslashes}/{$posts[i].PID|stripslashes}/{$title}{literal}/",
                                                             "pageTitle" : "{/literal}{$lang62} {$posts[i].gtitle|stripslashes} {$lang63}{$posts[i].price|stripslashes}{$lang446}{literal}",
-                                                            "pageDescription" : "{/literal}{$posts[i].gdesc|stripslashes}{literal}",
+                                                            "pageDescription" : "{/literal}{$posts[i].gdesc|escape:javascript}{literal}",
                                                             "pageImage" : "{/literal}{$baseurl}{literal}/pics/{/literal}{$posts[i].p1}{literal}"
                                                         }, {/literal}{$posts[i].PID}{literal});
                                                         </script>
